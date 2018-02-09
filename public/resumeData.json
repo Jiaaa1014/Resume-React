@@ -1,12 +1,12 @@
 {
   "main": {
-    "name": "Brad Traversy",
+    "name": "JiaLin Huang",
     "occupation": "Web developer, programmer and designer",
     "description": "I design and program websites and web applications of all types. I also teach web dev courses",
     "image": "profilepic.jpg",
     "bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
     "email": "bradtraversy@gmail.com",
-    "phone": "555-555-5555",
+    "phone": "886-928-834-194",
     "address": {
       "street": "933 Albany st, Suite 3",
       "city": "Boston",
@@ -18,7 +18,7 @@
     "social": [
       {
         "name": "facebook",
-        "url": "http://facebook.com",
+        "url": "https://www.facebook.com/lin.huang.3745496",
         "className": "fa fa-facebook"
       },
       {
@@ -28,22 +28,22 @@
       },
       {
         "name": "google-plus",
-        "url": "http://googleplus.com",
+        "url": "https://plus.google.com/115041668335182589339",
         "className": "fa fa-google-plus"
       },
       {
         "name": "linkedin",
-        "url": "http://linkedin.com",
+        "url": "https://www.linkedin.com/in/jialin-huang-0296a9b9/",
         "className": "fa fa-linkedin"
       },
       {
         "name": "instagram",
-        "url": "http://instagram.com",
+        "url": "https://www.instagram.com/jiaaa0000000/",
         "className": "fa fa-instagram"
       },
       {
         "name": "github",
-        "url": "http://github.com",
+        "url": "http://github.com/Jiaaa1014",
         "className": "fa fa-github"
       },
       {
@@ -56,10 +56,10 @@
   "resume": {
     "education": [
       {
-        "school": "University of Life",
-        "degree": "Master in Graphic Design",
-        "graduated": "April 2007",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium."
+        "school": "National ChengChi University",
+        "degree": "Master in Econs",
+        "graduated": "June 2018",
+        "description": "yeah coding is the most savoring thing I enjoy it "
       },
       {
         "school": "School of Cool Designers",
@@ -84,15 +84,15 @@
     ],
     "skills": [
       {
-        "name": "Photoshop",
+        "name": "React",
         "level": "60%"
       },
       {
-        "name": "Illustrator",
+        "name": "Vue",
         "level": "55%"
       },
       {
-        "name": "Wordpress",
+        "name": "Angular",
         "level": "50%"
       },
       {
@@ -106,81 +106,85 @@
       {
         "name": "jQuery",
         "level": "50%"
+      },
+      {
+        "name": "Nodejs",
+        "level": "30%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Coffee Cup",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-        "category": "Illustrator",
-        "tags": "Branding, Web Design",
+        "title": "Spotify Demo",
+        "description": "設立簡單的SpotifyAPI，以便搜尋歌手的曲目，按下demo播放",
+        "category": "FEND React",
+        "tags": "auth",
         "image": "coffee.jpg",
-        "url": "http://port1.com",
+        "url": "https://github.com/Jiaaa1014/MusicMaster-React",
         "modal": "#modal-01"
       },
       {
-        "title": "Console",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-        "category": "Web Design",
-        "tags": "Branding, Web Development",
+        "title": "GameofLife",
+        "description": "生命遊戲，九宮格邏輯生存",
+        "category": "FEND React (fcc)",
+        "tags": "heavy-loading",
         "image": "console.jpg",
-        "url": "http://port2.com",
+        "url": "https://github.com/Jiaaa1014/GameofLife-React",
         "modal": "#modal-02"
       },
       {
-        "title": "Judah",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-        "category": "Web Development",
-        "tags": "Branding, Web Programming",
+        "title": "GoalCoach",
+        "description": "登入登出交代事項，共用備忘錄",
+        "category": "FEND React",
+        "tags": "firebase, react, router ",
         "image": "judah.jpg",
-        "url": "http://port3.com",
+        "url": "https://github.com/Jiaaa1014/goalCoach-React",
         "modal": "#modal-03"
       },
       {
-        "title": "Into The Light",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-        "category": "Photography",
-        "tags": "Photography, Design",
+        "title": "Jokessss",
+        "description": "隨機笑話，但是不太好笑就是了",
+        "category": "FEND Vue",
+        "tags": "joke",
         "image": "into-the-light.jpg",
-        "url": "http://port4.com",
+        "url": "https://github.com/Jiaaa1014/RandomJokes-Vue",
         "modal": "#modal-04"
       },
       {
-        "title": "Farmer Boy",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-        "category": "Branding",
-        "tags": "Branding, Web Design",
+        "title": "Keep on Focusing",
+        "description": "行程規劃",
+        "category": "FEND Vue",
+        "tags": "firebase",
         "image": "farmerboy.jpg",
-        "url": "http://port5.com",
+        "url": "https://github.com/Jiaaa1014/Authentication-Vue",
         "modal": "#modal-05"
       },
       {
-        "title": "Girl",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-        "category": "Photography",
-        "tags": "Photography, Graphic Design",
+        "title": "Wiki Search",
+        "description": "簡易的WikiAPI",
+        "category": "FEND jQuery",
+        "tags": "",
         "image": "girl.jpg",
-        "url": "http://port6.com",
+        "url": "https://codepen.io/jia0O/pen/QONQyb",
         "modal": "#modal-06"
       },
       {
         "title": "Origami",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-        "category": "Illustration",
-        "tags": "Branding, Illustration",
+        "description": "某天無聊作的404NotFound",
+        "category": "FEND Pug",
+        "tags": "",
         "image": "origami.jpg",
-        "url": "http://port7.com",
+        "url": "https://codepen.io/jia0O/pen/WEPPxe",
         "modal": "#modal-07"
       },
       {
-        "title": "Retrocam",
-        "description": "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-        "category": "Web Development",
-        "tags": "Photography",
+        "title": "WeatherAPI",
+        "description": "偵測當下的天氣情況",
+        "category": "FEND JavaScript Pug",
+        "tags": "icon",
         "image": "retrocam.jpg",
-        "url": "http://port8.com",
+        "url": "https://codepen.io/jia0O/pen/mBJwJy",
         "modal": "#modal-08"
       }
     ]
