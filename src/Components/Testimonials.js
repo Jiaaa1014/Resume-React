@@ -2,6 +2,19 @@ import React, { Component } from 'react'
 
 export default class Testimonials extends Component {
   render() {
+    if (this.props.testimonials) {
+      var testimonials = this.props.testimonials.map(testimonial => {
+        return (
+          <li key={testimonial.user}>
+            <blockquote>
+              <p>{testimonial.text}</p>
+              <cite>{testimonial.user}</cite>
+            </blockquote>
+          </li>
+
+        )
+      })
+    }
     return (
       <section id="testimonials">
         <div className="text-container">
@@ -10,9 +23,9 @@ export default class Testimonials extends Component {
               <h1><span>Client Testimonials</span></h1>
             </div>
             <div className="ten columns flex-container">
-              <div className="flexslider">
-                <ul className="slides">
-                  <li>
+              {/* <div className="flexslider"> */}
+              <ul className="slides">
+                {/* <li>
                     <blockquote>
                       <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
                      to do what you believe is great work. And the only way to do great work is to love what you do.
@@ -30,9 +43,9 @@ export default class Testimonials extends Component {
                      </p>
                       <cite>Mr. Adobe</cite>
                     </blockquote>
-                  </li>
-                </ul>
-              </div>
+                  </li> */}{testimonials}
+              </ul>
+              {/* </div> */}
             </div>
           </div>
         </div>

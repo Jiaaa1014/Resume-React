@@ -15,7 +15,9 @@ class App extends Component {
       main: {},
       networks: [],
       address: {},
-      resume: {}
+      resume: {},
+      projects: [],
+      testimonials: []
     }
   }
   getResumeData() {
@@ -30,7 +32,9 @@ class App extends Component {
             main: data.main,
             networks: data.main.social,
             address: data.main.address,
-            resume: data.resume
+            resume: data.resume,
+            projects: data.portfolio.projects,
+            testimonials: data.testimonials
           })
       }.bind(this),
       error: function (err) {
@@ -51,9 +55,12 @@ class App extends Component {
           work={this.state.resume.work}
           skills={this.state.resume.skills}
         />
-        <Portfolio />
-        <Contact />
-        <Testimonials />
+        <Portfolio projects={this.state.projects} />
+        <Contact
+          main={this.state.main}
+          address={this.state.address}
+        />
+        <Testimonials testimonials={this.state.testimonials.testimonials} />
         <Footer />
       </div>
     );
