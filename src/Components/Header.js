@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 
 export default class Header extends Component {
   render() {
-    if (this.props.data) {
-      var name = this.props.data.name
+    if (this.props.main) {
+      var name = this.props.main.name
+      var occupation = this.props.main.occupation
+      var description = this.props.main.description
+      var city = this.props.main.city
+      var networks = this.props.main.socials
     }
     return (
       <header id="home">
