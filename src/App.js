@@ -12,7 +12,10 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      main: {}
+      main: {},
+      networks: [],
+      address: {},
+      resume: {}
     }
   }
   getResumeData() {
@@ -22,7 +25,13 @@ class App extends Component {
       dataType: 'json',
       cache: false,
       success: function (data) {
-        this.setState({ main: data.main })
+        this.setState(
+          {
+            main: data.main,
+            networks: data.main.social,
+            address: data.main.address,
+            resume: data.resume
+          })
       }.bind(this),
       error: function (err) {
         alert(err)
@@ -35,9 +44,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header main={this.state.main} />
-        <About />
-        <Resume />
+        <Header main={this.state.main} networks={this.state.networks} />
+        <About main={this.state.main} address={this.state.address} />
+        <Resume
+          education={this.state.resume.education}
+          work={this.state.resume.work}
+          skills={this.state.resume.skills}
+        />
         <Portfolio />
         <Contact />
         <Testimonials />

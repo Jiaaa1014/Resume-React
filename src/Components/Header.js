@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import _ from 'lodash'
 
 export default class Header extends Component {
   render() {
@@ -7,7 +8,11 @@ export default class Header extends Component {
       var occupation = this.props.main.occupation
       var description = this.props.main.description
       var city = this.props.main.city
-      var networks = this.props.main.socials
+      // lodash doesnt work
+      // var networks = _.get(this.props, 'main.city')
+      var networks = this.props.networks.map(net => {
+        return <li key={net.name}><a href={net.url}><i className={net.className}> </i> </a> </li>
+      })
     }
     return (
       <header id="home">
@@ -35,13 +40,7 @@ export default class Header extends Component {
               and learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul className="social">
-              <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-              <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
-              <li><a href="#"><i className="fa fa-skype"></i></a></li>
+              {networks}
             </ul>
           </div>
         </div>
