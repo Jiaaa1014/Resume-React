@@ -15,7 +15,6 @@ export default class Resume extends Component {
       })
     }
     if (this.props.work) {
-      console.log(this.props.work)
       var work = this.props.work.map(work => {
         return (
           <div key={work.company} className="row item">

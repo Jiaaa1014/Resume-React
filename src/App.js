@@ -48,19 +48,25 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header main={this.state.main} networks={this.state.networks} />
-        <About main={this.state.main} address={this.state.address} />
+        <Header
+          main={this.state.main}
+          networks={this.state.networks} />
+        <About
+          main={this.state.main}
+          address={this.state.address} />
         <Resume
           education={this.state.resume.education}
           work={this.state.resume.work}
           skills={this.state.resume.skills}
         />
-        <Portfolio projects={this.state.projects} />
+        <Portfolio
+          projects={this.state.projects} />
         <Contact
           main={this.state.main}
           address={this.state.address}
         />
-        <Testimonials testimonials={this.state.testimonials.testimonials} />
+        <Testimonials 
+          testimonials={this.state.testimonials.testimonials} />
         <Footer />
       </div>
     );
